@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>You win!</title>
+    </head>
+    <body>
+        <h1>You Win</h1>
+        {% if high_score %}
+        <p>{{ num_lives_left }} lives left is your new high score!</p>
+        {% endif %}
+        <p><a href="{{ url_for('index') }}">Play again</a></p>
+    </body>
+</html>
