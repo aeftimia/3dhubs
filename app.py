@@ -9,7 +9,6 @@ from flask import Flask, session, redirect, url_for, request, render_template
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY') or \
     'e5ac358c-f0bf-11e5-9e39-d3b532c10a28'
-#app.config['SESSION_TYPE'] = 'filesystem'
 
 winning_words = ['3dhubs', 'marvin', 'print', 'filament', 'order', 'layer']
 num_lives = 5
